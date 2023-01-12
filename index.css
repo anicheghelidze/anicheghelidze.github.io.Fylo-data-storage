@@ -71,7 +71,7 @@ body {
     font-family:'Raleway', sans-serif;
 }
 main {
-        background-image: url(/fylo-data-storage-component-master/images/bg-mobile.png);
+        background-image: url(bg-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -214,7 +214,7 @@ span {
 @media screen and (min-width: 1200px) {
     main {
         background:none;
-        background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+        background-image: url(bg-desktop.png);
         background-repeat: no-repeat;
         background-size: 100% 50%;
         background-position: bottom;
