@@ -1,0 +1,274 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+body {
+    font-size: 14px;
+    font-family:'Raleway', sans-serif;
+}
+main {
+        background-image: url(/fylo-data-storage-component-master/images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+}
+
+.container1 {
+    background-color: hsl(228, 56%, 26%);
+    width: 80%;
+    height: 180px;
+    border-radius: 10px 60px 10px 10px;
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 1.5rem;
+}
+.icon-list
+div {
+    background-color: hsl(229, 57%, 11%);
+    margin-right: 1rem;
+    width:50px;
+    border-radius: 10px;
+    height: 50px;
+    
+}
+.icon-list
+div
+a {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+.container2 {
+        background-color: hsl(228, 56%, 26%);
+        width: 80%;
+        height: 160px;
+        border-radius: 10px;
+        margin: 0 1rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+}
+.main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+}
+h1 {
+    font-size: 1rem;
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+
+}
+h1
+span {
+    font-weight: 700;
+}
+.progress-bar1 {
+    width: 100%;
+    height: 1rem;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+    margin-top: 0.7rem;
+    position: relative;
+}
+.gradient {
+    position:absolute;
+    width: 70%;
+    height: 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: flex;
+    flex-direction:row;
+    justify-content: right;
+    
+
+}
+.ball {
+    width: 1rem;
+    height: 1rem;
+    background-color:hsl(243, 100%, 93%); 
+    border-radius: 50%;
+
+}
+.scale-numbers {
+    color:hsl(243, 100%, 93%);
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.gb-Left {
+    background-color:hsl(0, 0%, 100%);
+    position:absolute;
+    width: 150px;
+    height: 70px;
+    display:flex;
+    border-radius: 8px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: hsl(229, 57%, 11%);
+}
+.gb-Left 
+h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    gap: 0.3rem;
+}
+.gb-Left
+span {
+    font-size: 2rem;
+}
+.triangle {
+    display: none;
+
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        background:none;
+        background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+        background-color: hsl(229, 57%, 11%);
+        
+        }
+    
+    .main-container {
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: flex-end;
+            gap:30px;
+            width: 70%;
+
+        }
+                .container1 {
+                    margin: 0;
+                    height: 200px;
+                    min-width: 380px;
+                    max-width: 380px;
+                }
+        
+                .container2 {
+                    min-width: 600px;
+                    max-width: 600px;
+                    margin: 0;
+                    height: 170px;
+                }
+
+                
+                .gb-Left {
+                    position:absolute;
+                    display: flex;
+                    flex-direction: row;
+                        justify-self: right;
+                    top:35%;
+                    transform: translate(330px); 
+                }
+                    .triangle {
+                    display: block;
+                    position: absolute;
+                    right: 0px;
+                    border-bottom: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid white;
+                    border-top: 10px solid white;
+                    content: "";
+                    top: 63px; 
+                    }
+
+        }
+
+
+
+        
+
